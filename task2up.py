@@ -14,11 +14,10 @@ class AnimalFactory:
         elif animal_type == "cat":
             return Cat()
 
-# Использование Factory
 factory = AnimalFactory()
 
 dog = factory.create_animal("dog")
 cat = factory.create_animal("cat")
 
-print(dog.speak())  # Гав!
-print(cat.speak())  # Мяу!
+print(dog.speak())
+print(cat.speak())
